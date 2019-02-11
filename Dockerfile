@@ -1,7 +1,6 @@
 FROM microsoft/iis
 
 RUN powershell -noprofile -command `
-    Import-Module IISAdministration; `
     Install-WindowsFeature web-asp; `
     Install-WindowsFeature web-asp-net45
 
